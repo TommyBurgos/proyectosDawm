@@ -30,3 +30,69 @@ a:hover{
 	background-color: #112;
 	color: #ddd;
 }
+.nav__responsive{
+	position: fixed;
+	z-index: 1000;
+	display: none;
+}
+.nav__responsive__ButtonContainers{
+	position: absolute;
+	width: 100%;
+	font-size: 35px;
+	background-color: #333;
+	margin-top: -38px;
+	z-index: 100;
+}
+.nav__responsive__Button{
+	text-align: left;
+	z-index: 100;
+	width: 100%;
+	padding: 6px 20px;	
+}
+.nav__li__Containers{
+	position: relative;
+	top: -1000px;
+	height: calc(100vh - 60px);
+	transition: all .2s;
+	z-index: 1;
+}
+@media screen and (max-width: 800px){
+	.nav__normal{
+		display: none;
+	}
+	.nav__responsive{
+		background-color: violet;
+		width: 100%;
+		height: 0;
+		color: #fff;
+		z-index: 15;
+		display: block;
+
+	}
+	.nav__ulResponsive{
+		display: block;
+		position: absolute;
+		width: 100%;		
+		background-color: blue;				
+		height: 0;
+		
+	}
+	.nav__li_container{
+		background-color: #333;
+		position: relative;
+		text-align: left;
+		top: -1000px;
+		height: 180px;
+		width: 75%;
+		transition: all 1s;
+		z-index: 1;
+	}
+	.liResponsive{
+		width: 100%;
+		padding: 8px 20px;
+	}
+	.nav__ulResponsive:hover > .nav__li_container{
+		top: 7px;
+
+	}
+}

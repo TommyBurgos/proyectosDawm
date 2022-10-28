@@ -227,3 +227,21 @@ h4{
 		padding-top: 20px;
 	}
 }
+@media screen and (max-width: 500px){
+	.seccionPrincipal{
+		flex-direction: column;
+	}
+	/*DIV PRINCIPAL 1*/
+	.divPrincipal1{
+		padding-bottom: 40px;
+	}
+	#texto{
+		margin: 10px;
+	}
+	#opciones{
+		margin: 0;
+	}
+	.divPrincipal2{
+		padding-top: 20px;
+	}
+}
