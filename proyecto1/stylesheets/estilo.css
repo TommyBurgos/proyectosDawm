@@ -213,8 +213,15 @@ h4{
 	.seccionPrincipal{
 		flex-direction: column;
 	}
+	/*DIV PRINCIPAL 1*/
 	.divPrincipal1{
 		padding-bottom: 20px;
+	}
+	#texto{
+		margin: 20px;
+	}
+	#opciones{
+		margin: 20px;
 	}
 	.divPrincipal2{
 		padding-top: 20px;
