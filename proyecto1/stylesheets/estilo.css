@@ -5,15 +5,18 @@
 /*Seccion principal Izquierda*/
 .seccionPrincipal{
 	text-align: center;
-	display: grid;
-	grid-template-columns: 40% 1fr;
-	grid-template-rows: 300px;
+	display: flex;
+	width: 100%;
 	margin: 40px 20px;
+	flex-wrap: wrap;
 }
 .divPrincipal1{
+	flex: 1;	
 	grid-template-columns: repeat(7, 14.28%);
 	grid-template-rows: repeat(7, 1fr);
 	display: grid;
+	margin: 10px;
+
 }
 #adorno{
 	grid-column: 2/7;
@@ -25,6 +28,7 @@
 	background-color: #fff;
 	transform: rotate(45deg);
 	z-index: 1;
+	margin: 15px;
 }
 #img{
 	grid-column: 3/6;
@@ -44,6 +48,7 @@ h2{
 	color: grey;
 }
 .divPrincipal2{
+	flex: 2;
 	display: grid;
 	grid-template-rows: 180px 100px;
 }
@@ -58,7 +63,9 @@ h2{
 }
 
 .Contratarme{
-	width: 40%;
+	flex-wrap: wrap;
+	width: 42%;
+	min-width: 40%;
 	background-color: #6495ed;
 	padding: 5px;
 	border-radius: 7px;
@@ -66,7 +73,8 @@ h2{
 }
 
 #btContratarme{
-	width: 80%;
+	width: 90%;
+	min-width: 80%;
 	background-color: #6495ed;	
 	padding: 10px 20px;
 	margin: 4px;
@@ -107,33 +115,58 @@ i {
 }
 /*Seccion de Conocimientos*/
 .seccionConocimientos{
+	display: flex;
+	flex-wrap: wrap;
 	text-align: center;
+	justify-content: center;
 	width: 100%;
-	height: 220px;
+	min-height: 220px;
+	max-height: 500px;
 	
 }
 .Conocimientos{
-	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-basis: auto;
+	flex-wrap: wrap;
 	width: 100%;
 	height: 100%;
 }
+
 .imgConocimientos{
-	width: 12%;
-	height: 60%;
-	padding: 1%;
+	width: 100px;
+	min-width: 80px;
+	height: 130px;
+	min-height: 105px;
+	padding: 3% 1%;
 }
 .imgConocimientos2{
-	width: 13%;
-	height: 55%;
+	width: 140px;
+	min-width: 120px;
+	height: 120px;
+	min-height: 105px;
+	padding: 3% 1%;
 }
 
 /*Seccion de Proyectos*/
 .seccionPortafolio{
+	display: flex;
+	width: 100%;
 	padding: 25px;
-	text-align: center;
+	justify-content: center;
 	
 }
-
+.imgTrabajos{
+	display: flex;
+	justify-content: center;
+	flex-basis: auto;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+}
+#titPortafolio{
+	display: block;
+}
 /*Footer*/
 footer{
 	display: grid;
@@ -172,4 +205,18 @@ h4{
 .facebook{
 	width: 14%;
 	height: 27%;
+}
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 800px){
+	.seccionPrincipal{
+		flex-direction: column;
+	}
+	.divPrincipal1{
+		padding-bottom: 20px;
+	}
+	.divPrincipal2{
+		padding-top: 20px;
+	}
 }

@@ -3,5 +3,16 @@ h1{
 }
 #flex-container{
 	display: flex;
+	position: relative;
+	top: 20px;
+	width: 100%;
+	justify-content: center;
+	flex-wrap: wrap;
 	
+}
+.item-proyectos{
+	width: 24%;
+	text-align: center;
+	min-width: 80px;
+	padding: 5px;
 }
