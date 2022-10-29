@@ -56,6 +56,53 @@ a:hover{
 	transition: all .2s;
 	z-index: 1;
 }
+/*Footer*/
+footer{
+	display: grid;	
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 100%;
+	background-color: #555;
+	width: 100%;
+	height: 160px;
+	border-radius: 20px 20px 0 0;
+	justify-content: center;
+	align-items: flex-end;
+}
+.datos{
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-rows: 33% 33% 34%;
+	grid-template-columns: 100%;	
+	align-items: center;
+}
+div > h4{
+	width: 100%;
+	padding: 3%;
+}
+
+.redesSociales{
+	display: flex;
+	flex-basis: auto;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	margin-top: 20px;
+}
+.redes{
+	max-width: 60px;
+	min-width: 25px;
+	max-height: 80px;
+	min-height: 32px;
+	padding: 10px;	
+
+}
+a:hover{
+	background-color: #666;
+}
+li:hover{
+	background-color: #666;
+}
+
 @media screen and (max-width: 800px){
 	.nav__normal{
 		display: none;
@@ -93,6 +140,5 @@ a:hover{
 	}
 	.nav__ulResponsive:hover > .nav__li_container{
 		top: 7px;
-
 	}
 }

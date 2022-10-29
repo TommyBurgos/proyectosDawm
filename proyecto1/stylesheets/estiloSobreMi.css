@@ -6,13 +6,28 @@ h1{
 }
 /*Seccion Principal*/
 #principal{
-	display: grid;
-	grid-template-columns: 40% 60%;
-	grid-template-rows: 100%;
-	justify-items: center;
-	align-items: center;
+	margin-top: 15px;
+	display: flex;
+	flex-wrap: wrap;	
+	width: 100%;
+	min-height: 370px;
+	max-height: 600px;	
+	text-align: center;
+	flex-basis: auto;
 }
+#imagen{
+	flex: 1;
+	width: 600px;
+	min-width: 300px;
+}
+#introduccion{
+	width: 100%;
+	flex-basis: auto;
+	height: 100%;
+}
+
 h2{
+	font-size: 30px;
 	padding: 0;
 	margin: 0;
 }
@@ -22,62 +37,26 @@ p{
 	padding-right: 15%;
 }
 #divTexto{
+	flex: 2;
+	width: 800px;
+	min-width: 400px;
 	display: grid;
 	grid-template-columns: 100%;
-	grid-template-rows: 15% 70% 15%;
+	grid-template-rows: 15% 65% 20%;
+	justify-content: center;
 	
 }
 #divBoton{
+
 	text-align: center;
 }
 input{
 	width: 50%;
-	height: 100%;
+	height: 80%;
 	background-color: #0984AF;
 	border-radius: 20px;
 	color: #fff;
 	margin-bottom: 5px;
 	padding-bottom: 5px;
 }
-/*Footer*/
-footer{
-	position: relative;
-	top: 80%;
-	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-template-rows: 90%;
-	background-color: #555;
-	width: 100%;
-	height: 160px;
-	border-radius: 20px 20px 0 0;
-	justify-content: center;
-	align-items: flex-end;
-}
-.datos{
-	height: 100%;
-	width: 100%;
-	display: grid;
-	grid-template-rows: 33% 33% 34%;
-	grid-template-columns: 100%;
-	align-items: center;
-	left: 0;
 
-
-}
-h4{
-	padding: 3%;
-}
-.redesSociales{
-	display: flex;
-}
-.redes{
-	width: 11%;
-	height: 20%;
-	padding: 20px;
-	margin-top: 20px;
-
-}
-.facebook{
-	width: 14%;
-	height: 27%;
-}

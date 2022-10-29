@@ -7,7 +7,7 @@
 	text-align: center;
 	display: flex;
 	width: 100%;
-	margin: 40px 20px;
+	margin: 40px 0;
 	flex-wrap: wrap;
 }
 .divPrincipal1{
@@ -50,7 +50,12 @@ h2{
 .divPrincipal2{
 	flex: 2;
 	display: grid;
-	grid-template-rows: 180px 100px;
+	grid-template-rows: minmax(180px, 1fr); 100px;
+	
+}
+#texto{
+	min-height: 150px;
+	max-height: 200px;
 }
 #opciones{
 	margin: 30px;
@@ -62,8 +67,7 @@ h2{
 	align-content: center;
 }
 
-.Contratarme{
-	flex-wrap: wrap;
+.Contratarme{	
 	width: 42%;
 	min-width: 40%;
 	background-color: #6495ed;
@@ -169,7 +173,7 @@ i {
 }
 /*Footer*/
 footer{
-	display: grid;
+	display: grid;	
 	grid-template-columns: 50% 50%;
 	grid-template-rows: 100%;
 	background-color: #555;
@@ -189,9 +193,11 @@ footer{
 
 
 }
-h4{
+div > h4{
+	width: 100%;
 	padding: 3%;
 }
+
 .redesSociales{
 	display: flex;
 }
@@ -201,10 +207,6 @@ h4{
 	padding: 20px;
 	margin-top: 20px;
 
-}
-.facebook{
-	width: 14%;
-	height: 27%;
 }
 
 /*RESPONSIVE*/
@@ -228,6 +230,9 @@ h4{
 	}
 }
 @media screen and (max-width: 500px){
+	h1{
+		font-size: 34px;
+	}
 	.seccionPrincipal{
 		flex-direction: column;
 	}
@@ -239,7 +244,8 @@ h4{
 		margin: 10px;
 	}
 	#opciones{
-		margin: 0;
+		grid-template-rows: 45px 45px;
+		grid-gap: 12px;
 	}
 	.divPrincipal2{
 		padding-top: 20px;
