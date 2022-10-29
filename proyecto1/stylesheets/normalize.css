@@ -58,7 +58,8 @@ a:hover{
 }
 /*Footer*/
 footer{
-	display: grid;	
+	display: grid;
+	position: relative;	
 	grid-template-columns: 50% 50%;
 	grid-template-rows: 100%;
 	background-color: #555;

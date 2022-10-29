@@ -11,7 +11,7 @@ h1{
 	flex-wrap: wrap;	
 	width: 100%;
 	min-height: 370px;
-	max-height: 600px;	
+	max-height: 800px;	
 	text-align: center;
 	flex-basis: auto;
 }
@@ -24,6 +24,7 @@ h1{
 	width: 100%;
 	flex-basis: auto;
 	height: 100%;
+	margin: 20px;
 }
 
 h2{
@@ -37,26 +38,58 @@ p{
 	padding-right: 15%;
 }
 #divTexto{
-	flex: 2;
-	width: 800px;
-	min-width: 400px;
+	flex: 2;	
 	display: grid;
-	grid-template-columns: 100%;
+	grid-template-columns: 100%;	
 	grid-template-rows: 15% 65% 20%;
 	justify-content: center;
+	align-content: center;
 	
 }
-#divBoton{
 
+#divBoton{
 	text-align: center;
+	height: 100%;
 }
+#nombre{
+	padding: 20px;
+}
+
 input{
 	width: 50%;
 	height: 80%;
 	background-color: #0984AF;
 	border-radius: 20px;
 	color: #fff;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 	padding-bottom: 5px;
+}
+.nav__responsive__ButtonContainers{	
+	margin-top: 0;
+	
+}
+@media screen and (max-width: 800px){
+	h2{
+		font-size: 25px;
+	}
+	#divTexto{
+		margin: 20px 0;
+	}
+	#introduccion{
+		padding-top: 20px;
+	}
+	input{
+		margin: 0px;
+	}
+	.nav__ulResponsive:hover > .nav__li_container{
+		top: 47px;
+	}
+	
+}
+@media screen and(max-width: 500){
+	#divTexto{
+		margin-top: 20px 0;
+	}
+
 }
 

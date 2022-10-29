@@ -1,70 +1,89 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="stylesheets/estiloSobreMi.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Sobre Mi</title>
-</head>
-<body>
-	<header>
-      <nav>
-        <ul>
-          <li id="opPrincipal"><a href="index.html">Principal</a></li>
-          <li id="opSobreMi"><a href="sobreMi.html">Sobre mi</a> </li>
-          <li id="opMisProyectos"> <a href="misProyectos.html">Mis proyectos</a></li>
-          <li id="opReferencias"><a href="referencias.html">Referencias</a></li>
-          <li id="opContactos"><a href="contactos.html">Contactos</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-	<h1>SOBRE MI</h1>
-	<section id="principal">
-		<div id="imagen">
-			<img src="./images/perfil.jpg">
-		</div>
-		<div id="divTexto">
-			<div id="nombre">
-				<h2>Hola, mi nombre es Tommy Burgos, <br> y soy Desarrollador Web</h2>
-			</div>
-			<div id="introduccion">
-				<p>					
-						Soy de Guayaquil, Ecuador, nací el 27 de febrero de 1998. 
-						Actualmente tengo un trabajo de medio tiempo en mi ciudad, pero también estoy empezando como FreeLancer en el desarrollo Web y aplicaciones con Flutter. <br>
-						Me considero una persona pro activa, y capaz de llevar a cabo los distintos proyectos que se dispongan, por lo que estoy dispuesto a realizar distintos proyectos, buscando siempre aprender y dar lo mejor de mi, brindando así un producto de calidad.<br>
-						<br>
-						<br>
-						<br>				
-				</p>
-			</div>
-			<div id="divBoton">
-				<a href="misProyectos.html" rel="nofollow"><input class="iniciar" title="Ingreso a mis proyectos" type="button" name="btProyectos" value="Ver mis Proyectos"></a>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">		
+		<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/estiloSobreMi.css">
+		<script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+    	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sobre Mi</title>
+	</head>
+	<body>
+		<header>
+	    <nav class="nav__normal">
+	        <ul>
+	          <li id="opPrincipal"><a href="index.html">Principal</a></li>
+	          <li id="opSobreMi"><a href="sobreMi.html">Sobre mi</a> </li>
+	          <li id="opMisProyectos"> <a href="misProyectos.html">Mis proyectos</a></li>
+	          <li id="opReferencias"><a href="referencias.html">Referencias</a></li>
+	          <li id="opContactos"><a href="contactos.html">Contactos</a></li>
+	        </ul>
+	      </nav>
+	  </header>
+	    <!--Menu Responsive -->
+	  <header>
+	    <nav class="nav__responsive">                            
+	      <ul class="nav__ulResponsive">
+	        <div class="nav__responsive__ButtonContainers">
+	     	    <div class="nav__responsive__Button fas fa-bars"></div>
+	            </div>     
+	            <div class="nav__li_container">
+	              <li class="liResponsive" id="opPrincipal"><a href="index.html">Principal</a></li>
+	              <li class="liResponsive" id="opSobreMi"><a href="sobreMi.html">Sobre mi</a> </li>
+	              <li class="liResponsive" id="opMisProyectos"> <a href="misProyectos.html">Mis proyectos</a></li>
+	              <li class="liResponsive" id="opReferencias"><a href="referencias.html">Referencias</a></li>
+	              <li class="liResponsive" id="opContactos"><a href="contactos.html">Contactos</a></li>
+	            </div>       
+	          </ul>
+	      </nav>
+	    </header>
 
+		<h1>SOBRE MI</h1>
+		<section id="principal">
+			<div id="imagen">
+				<img src="./images/perfil.jpg">
 			</div>
-		</div>
-	</section>
-	  <footer>
-      <div class="datos">
-        <div>
-          <h4>Guayaquil, Ecuador</h4>
-        </div>
-        <div>
-          <h4>+593 987605705</h4>
-        </div>
-        <div>
-          <h4>trburgos@espol.edu.ec</h4>
-        </div>
-      </div>
-      <div class="redesSociales">
-        <img class="redes" src="images/logoInstagram.png">
-        <img class="redes facebook" src="images/logoFacebook.png">
-        <img class="redes" src="images/logoWhatsApp.png">
-                
-      </div>
-    </footer>
-  
-</body>
+			<div id="divTexto">
+				<div id="nombre">
+					<h2>Hola, mi nombre es Tommy Burgos, <br> y soy Desarrollador Web</h2>
+				</div>
+				<div id="introduccion">
+					<p>					
+							Soy de Guayaquil, Ecuador, nací el 27 de febrero de 1998. 
+							Actualmente tengo un trabajo de medio tiempo en mi ciudad, pero también estoy empezando como FreeLancer en el desarrollo Web y aplicaciones con Flutter. <br>
+							Me considero una persona pro activa, y capaz de llevar a cabo los distintos proyectos que se dispongan, por lo que estoy dispuesto a realizar distintos proyectos, buscando siempre aprender y dar lo mejor de mi, brindando así un producto de calidad.<br>
+							<br>
+							<br>
+							<br>				
+					</p>
+				</div>
+				<div id="divBoton">
+					<a href="misProyectos.html" rel="nofollow"><input class="iniciar" title="Ingreso a mis proyectos" type="button" name="btProyectos" value="Ver mis Proyectos"></a>
+
+				</div>
+			</div>
+		</section>
+		  <footer>
+	      <div class="datos">
+	        <div>
+	          <h4>Guayaquil, Ecuador</h4>
+	        </div>
+	        <div>
+	          <h4>+593 987605705</h4>
+	        </div>
+	        <div>
+	          <h4>trburgos@espol.edu.ec</h4>
+	        </div>
+	      </div>
+	      <div class="redesSociales">
+	        <img class="redes" src="images/logoInstagram.png">
+	        <img class="redes facebook" src="images/logoFacebook.png">
+	        <img class="redes" src="images/logoWhatsApp.png">
+	                
+	      </div>
+	    </footer>
+	  
+	</body>
 </html>

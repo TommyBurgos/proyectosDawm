@@ -5,43 +5,77 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/estiloMisProyectos.css">
+  <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Mis Proyectos</title>
 </head>
 <body>
 	<header>
-      <nav>
-        <ul>
-          <li id="opPrincipal"><a href="index.html">Principal</a></li>
-          <li><a id="opSobreMi" href="sobreMi.html">Sobre mi</a> </li>
-          <li id="opMisProyectos"> <a href="misProyectos.html">Mis proyectos</a></li>
-          <li id="opReferencias"><a href="referencias.html">Referencias</a></li>
-          <li id="opContactos"><a href="contactos.html">Contactos</a></li>
-        </ul>
-      </nav>
+      <nav class="nav__normal">
+          <ul>
+            <li id="opPrincipal"><a href="index.html">Principal</a></li>
+            <li id="opSobreMi"><a href="sobreMi.html">Sobre mi</a> </li>
+            <li id="opMisProyectos"> <a href="misProyectos.html">Mis proyectos</a></li>
+            <li id="opReferencias"><a href="referencias.html">Referencias</a></li>
+            <li id="opContactos"><a href="contactos.html">Contactos</a></li>
+          </ul>
+        </nav>
     </header>
-	  <h1>Mis Proyectos</h1>
+      <!--Menu Responsive -->
+    <header>
+      <nav class="nav__responsive">                            
+        <ul class="nav__ulResponsive">
+          <div class="nav__responsive__ButtonContainers">
+            <div class="nav__responsive__Button fas fa-bars"></div>
+              </div>     
+              <div class="nav__li_container">
+                <li class="liResponsive" id="opPrincipal"><a href="index.html">Principal</a></li>
+                <li class="liResponsive" id="opSobreMi"><a href="sobreMi.html">Sobre mi</a> </li>
+                <li class="liResponsive" id="opMisProyectos"> <a href="misProyectos.html">Mis proyectos</a></li>
+                <li class="liResponsive" id="opReferencias"><a href="referencias.html">Referencias</a></li>
+                <li class="liResponsive" id="opContactos"><a href="contactos.html">Contactos</a></li>
+              </div>       
+            </ul>
+        </nav>
+      </header>
+  <h1>Mis Proyectos</h1>
     <section id="flex-container">
-      <div class="item-proyectos">
+      <div id="itPaginaWeb" class="item-proyectos">
         <img src="images/pJuanXXIII.png">
         <h3>Página Web</h3>
         <p>Proyecto de página web para la Unidad Educativa Juan XXIII usando HTML, CSS y JavaScript</p>
       </div>
-      <div class="item-proyectos">
-        <img src="images/pJuanXXIII.png">
-        <h3>Página Web</h3>
-        <p>Proyecto de página web para la Unidad Educativa Juan XXIII usando HTML, CSS y JavaScript</p>
+      <div id="itJuego" class="item-proyectos">
+        <img src="images/akinator.jpg">
+        <h3>Juego de adivinanza</h3>
+        <p>Piensa en un animal y Akinator te dira en cual estas pensado, se usa principalmente Java</p>
       </div>
-      <div class="item-proyectos">
-        <img src="images/pJuanXXIII.png">
-        <h3>Página Web</h3>
-        <p>Proyecto de página web para la Unidad Educativa Juan XXIII usando HTML, CSS y JavaScript</p>
+      <div id="itAppCompras" class="item-proyectos">
+        <img src="images/pAppCompras.gif">
+        <h3>Aplicación de Compras</h3>
+        <p>Aplicación de compras realizada con Dart y Flutter</p>
       </div>
-      <div class="item-proyectos">
-        <img src="images/pJuanXXIII.png">
-        <h3>Página Web</h3>
-        <p>Proyecto de página web para la Unidad Educativa Juan XXIII usando HTML, CSS y JavaScript</p>
-      </div>
-    
+  
     </section>
+    <footer>
+      <div class="datos">
+        <div>
+          <h4>Guayaquil, Ecuador</h4>
+        </div>
+        <div>
+          <h4>+593 987605705</h4>
+        </div>
+        <div>
+          <h4>trburgos@espol.edu.ec</h4>
+        </div>
+      </div>
+      <div class="redesSociales">
+        <img class="redes" src="images/logoInstagram.png">
+        <img class="redes facebook" src="images/logoFacebook.png">
+        <img class="redes" src="images/logoWhatsApp.png">
+                
+      </div>
+    </footer>
 </body>
 </html>

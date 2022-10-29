@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">	
 	<title>Referencias- Burgos Tommy</title>
 	<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+  <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
 	<header>
-      <nav>
+      <nav class="nav__normal">
         <ul>
           <li id="opPrincipal"><a href="index.html">Principal</a></li>
-          <li><a id="opSobreMi" href="sobreMi.html">Sobre mi</a> </li>
+          <li id="opSobreMi"><a href="sobreMi.html">Sobre mi</a> </li>
           <li id="opMisProyectos"> <a href="misProyectos.html">Mis proyectos</a></li>
           <li id="opReferencias"><a href="referencias.html">Referencias</a></li>
           <li id="opContactos"><a href="contactos.html">Contactos</a></li>
         </ul>
       </nav>
     </header>
+
+    <!--Menu Responsive -->
+    <header>
+      <nav class="nav__responsive">                            
+          <ul class="nav__ulResponsive">
+            <div class="nav__responsive__ButtonContainers">
+            <div class="nav__responsive__Button fas fa-bars"></div>
+            </div>     
+            <div class="nav__li_container">
+              <li class="liResponsive" id="opPrincipal"><a href="index.html">Principal</a></li>
+              <li class="liResponsive" id="opSobreMi"><a href="sobreMi.html">Sobre mi</a> </li>
+              <li class="liResponsive" id="opMisProyectos"> <a href="misProyectos.html">Mis proyectos</a></li>
+              <li class="liResponsive" id="opReferencias"><a href="referencias.html">Referencias</a></li>
+              <li class="liResponsive" id="opContactos"><a href="contactos.html">Contactos</a></li>
+            </div>       
+          </ul>
+      </nav>
+    </header>
+
     
 </body>
 </html>

@@ -1,18 +1,76 @@
 h1{
 	text-align: center;
 }
+#opMisProyectos{
+	background-color: #333;
+}
 #flex-container{
-	display: flex;
-	position: relative;
+	display: flex;	
 	top: 20px;
 	width: 100%;
+	min-height: 400px;
+	max-height: 1800px;
 	justify-content: center;
-	flex-wrap: wrap;
+	flex-wrap: wrap;	
+	flex-basis: auto;
 	
 }
 .item-proyectos{
-	width: 24%;
 	text-align: center;
-	min-width: 80px;
-	padding: 5px;
+	padding: 25px;
+}
+#itPaginaWeb{
+	flex: 1;
+}
+#itJuego{
+	flex: 1;
+}
+#itAppCompras{
+	flex: 1;
+}
+#diseno{
+	flex: 1;
+}
+.nav__responsive__ButtonContainers{	
+	margin-top: 0;
+	
+}
+#itJuego{
+	top: -20px;
+}
+img{
+	min-width: 150px;
+	max-width: 250px;
+	min-height: 180px;
+	max-height: 290px;
+}
+@media screen and (max-width: 700px){
+	h2{
+		font-size: 25px;
+	}
+	#divTexto{
+		margin: 20px 0;
+	}
+	#introduccion{
+		padding-top: 20px;
+	}
+	input{
+		margin: 0px;
+	}
+	.nav__ulResponsive:hover > .nav__li_container{
+		top: 47px;
+	}
+	h1{	
+		position: relative;
+		top: 60px;
+		margin: 10px;
+	}
+	#flex-container{
+		position: relative;
+		top: 74px;
+	}
+	#itAppCompras{
+		margin-bottom: 80px;
+	}
+	
 }
