@@ -75,5 +75,16 @@ iframe{
 	.nav__ulResponsive:hover > .nav__li_container{
 		top: 47px;
 	}
+	.containerReferencias{
+		position: relative;
+		top: 55px;
+	}
+	.mapa{
+		position: relative;
+		top: 60px;
+	}
+	footer{
+		top: 60px;
+	}
 	
 }

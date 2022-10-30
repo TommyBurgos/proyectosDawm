@@ -1,23 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">	
 	<title>Contactos- Tommy Burgos</title>
 	<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/estiloContactos.css">
+  <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<header>
-      <nav>
+      <nav class="nav__normal">
         <ul>
           <li id="opPrincipal"><a href="index.html">Principal</a></li>
-          <li><a id="opSobreMi" href="sobreMi.html">Sobre mi</a> </li>
+          <li id="opSobreMi"><a href="sobreMi.html">Sobre mi</a> </li>
           <li id="opMisProyectos"> <a href="misProyectos.html">Mis proyectos</a></li>
           <li id="opReferencias"><a href="referencias.html">Referencias</a></li>
           <li id="opContactos"><a href="contactos.html">Contactos</a></li>
         </ul>
       </nav>
     </header>
-    
+
+    <!--Menu Responsive -->
+    <header>
+      <nav class="nav__responsive">                            
+          <ul class="nav__ulResponsive">
+            <div class="nav__responsive__ButtonContainers">
+            <div class="nav__responsive__Button fas fa-bars"></div>
+            </div>     
+            <div class="nav__li_container">
+              <li class="liResponsive" id="opPrincipal"><a href="index.html">Principal</a></li>
+              <li class="liResponsive" id="opSobreMi"><a href="sobreMi.html">Sobre mi</a> </li>
+              <li class="liResponsive" id="opMisProyectos"> <a href="misProyectos.html">Mis proyectos</a></li>
+              <li class="liResponsive" id="opReferencias"><a href="referencias.html">Referencias</a></li>
+              <li class="liResponsive" id="opContactos"><a href="contactos.html">Contactos</a></li>
+            </div>       
+          </ul>
+      </nav>
+    </header>    
+    <section class="principal">
+      <div class="divImagen">
+        <img src="images/op4.gif">
+      </div>
+      <div class="contenedor">
+        <form class="form">
+          <div class="headFormulario">
+            <h1 class="formTitle">Contactame</h1>    
+          </div>
+          <label class="formLabel">Nombre completo</label>
+          <input type="text" class="inputText" name="" placeholder="Escribe tú nombre">
+
+          <label class="formLabel">Dirección:</label>
+          <input type="text" name="" placeholder="Dirección">
+
+          <label class="formLabel">Correo Electronico</label>
+          <input type="email" name="" placeholder="Escribe tú correo">
+
+          <label class="formLabel">Mensaje</label>
+          <textarea placeholder="Escribe aquí tu mensaje">
+            
+          </textarea>
+          <input type="submit" class="btn-submit" name="" value="Enviar consulta">
+        </form>        
+
+      </div>
+    </section>
+        <footer>
+      <div class="datos">
+        <div>
+          <h4>Guayaquil, Ecuador</h4>
+        </div>
+        <div>
+          <h4>+593 987605705</h4>
+        </div>
+        <div>
+          <h4>trburgos@espol.edu.ec</h4>
+        </div>
+      </div>
+      <div class="redesSociales">
+        <img class="redes" src="images/logoInstagram.png">
+        <img class="redes facebook" src="images/logoFacebook.png">
+        <img class="redes" src="images/logoWhatsApp.png">
+                
+      </div>
+    </footer>
 </body>
 </html>
