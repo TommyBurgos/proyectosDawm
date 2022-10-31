@@ -68,6 +68,21 @@ input{
 	margin-top: 0;
 	
 }
+.video{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+}
+#canalYT{
+	font-size: 22px;
+}
+video{
+	margin-top: 15px;
+	width: 80%;
+	min-height: 320px;
+	max-height: 500px;
+}
 @media screen and (max-width: 800px){
 	h2{
 		font-size: 25px;
