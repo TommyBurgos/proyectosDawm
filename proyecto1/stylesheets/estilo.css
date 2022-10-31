@@ -171,6 +171,17 @@ i {
 #titPortafolio{
 	display: block;
 }
+#misProyectos.html{	
+	text-align: right;
+}
+#verMas{
+	width: 100%;
+	text-align: right;
+}
+#enlaceVerMas{
+	text-align: left;
+	width: 40px;
+}
 /*Footer*/
 footer{
 	display: grid;	
