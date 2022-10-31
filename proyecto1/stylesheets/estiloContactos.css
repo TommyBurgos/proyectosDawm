@@ -13,9 +13,9 @@
 }
 .divImagen{
 	flex: 1;
-	min-width: 380px;
+	min-width: 200px;
 	max-width: 430px;
-	min-height: 450px;
+	min-height: 350px;
 	max-height: 700px;
 }
 img{
@@ -24,9 +24,9 @@ img{
 }
 .contenedor{
 	flex: 1;
-	min-width: 500px;
+	min-width: 280px;
 	max-width: 750px;
-	min-height: 450px;
+	min-height: 340px;
 	max-height: 800px;
 }
 input{
@@ -48,28 +48,44 @@ input{
 }
 .formLabel{
 	display: block;
-	color: #ff951b;
+	color: #03B9F9;
 	font-size: 15px;
 	position: relative;
 }
+.input{
+	color: #000;
+}
+.input:hover{
+	background-color: #E8F7FD;
+	box-shadow: 5px solid #E0F4FC;
+}
 .btn-submit{
-	background-color: #281;
+	background-color: #0278A2;
 	border-radius: 10px;
 	width: 130px;
 	height: 30px;
+}
+.btn-submit:hover{
+	background-color: #04B6F5;
+	transition: .3s;
 }
 textarea{
 	background: rgba(0, 0, 0, .7);
 	border: none;
 	outline: none;
-	border-bottom: 2px solid #ff851b;
+	border-bottom: 2px solid #03B9F9;
 	width: 100%;
 	padding: 12px;
 	margin-bottom: 2px;
 	font-size: 14px;
 	color: #fff;
 }
-
+textarea:focus{
+	background-color: #fff;
+	color: #000;
+	transition: .8s;
+	border-radius: 5px;
+}
 @media screen and (max-width: 800px){
 	h2{
 		font-size: 25px;
