@@ -5,7 +5,9 @@
     --light: #F2F2F2;
     --dark: #111111;
 }
-
+#ponerColor{
+    color: #000;
+}
 .fw-medium {
     font-weight: 600 !important;
 }
