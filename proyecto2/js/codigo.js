@@ -5,7 +5,9 @@ const options = {
 		'X-RapidAPI-Host': 'netflix54.p.rapidapi.com'
 	}
 };
+
 let url='https://netflix54.p.rapidapi.com/search/?query=stranger&offset=0&limit_titles=50&limit_suggestions=20';
+let parametros=["TITULOS","ACTORES"];
 fetch(url, options)
 	.then(response => response.json())
 	.then(obj => {
@@ -16,21 +18,45 @@ fetch(url, options)
             //h2nTitulos.setAttribute('data-toggle','counter-up');
             h2nTitulos.innerHTML=`${obj.titles.length}`;
             let nActores=document.querySelector('.nactores');            
+            let cantTitulos=0;
             let cont=0;            
             for(let titulo of obj.titles){                
                 for(let i=0;i<titulo.jawSummary.cast.length;i++){
                     console.log(titulo.jawSummary.cast[i].name);
                     cont++;
-                }                
-                
+                }cantTitulos++;                      
             }console.log("Total "+cont);
+            console.log("Titulos totales "+cantTitulos);
             nActores.innerHTML=`${cont}`;
-            console.log(obj);
-            console.log(obj.titles[0].jawSummary.title);
-            console.log(obj.titles[0].jawSummary.logoImage.url);
-            console.log(obj.titles[0].jawSummary.synopsis);
-            console.log(obj.titles.length);
-            console.log(obj.titles[0].jawSummary.cast[0].name);
+            let valores=[cantTitulos,cont];
+            var layout = {
+                title: 'Cantidad de actores y titulos',
+                barmode: 'stack',
+                font:{
+                    family: 'Raleway, sans-serif'
+                  },
+                  showlegend: false,
+                  xaxis: {
+                    tickangle: -45
+                  },
+                  yaxis: {
+                    zeroline: false,
+                    gridwidth: 2
+                  },
+                  bargap :0.05
+              };
+            var data = [{                
+                x: parametros,
+                y: valores,
+                type: "bar"
+            }];
+            Plotly.newPlot("grafico",data,layout);
+            //console.log(obj);
+            //console.log(obj.titles[0].jawSummary.title);
+            //console.log(obj.titles[0].jawSummary.logoImage.url);
+            //console.log(obj.titles[0].jawSummary.synopsis);
+            //console.log(obj.titles.length);
+            //console.log(obj.titles[0].jawSummary.cast[0].name);
         }
         }
         )
