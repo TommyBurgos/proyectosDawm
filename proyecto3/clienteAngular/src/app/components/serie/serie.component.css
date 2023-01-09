@@ -14,7 +14,9 @@ mat-toolbar button {
   line-height: normal;
 }
 
-
+.card{
+   background-color: #EFEFEF;
+}
 .card img {
   width: 75%;
 }
@@ -23,6 +25,13 @@ mat-toolbar button {
   font-size: 1.3rem;
   color: black;
   line-height: normal;
+}
+.container-fluid{
+  background-image: url("../../../assets/images/fondo2.jpg");
+}
+video{
+  position: relative;
+  left: -25%;
 }
 
 .stat-value {
