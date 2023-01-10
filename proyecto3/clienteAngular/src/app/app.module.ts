@@ -12,13 +12,15 @@ import { SplashComponent } from './components/splash/splash.component';
 import { SeriesComponent } from './components/series/series.component';
 import { SerieComponent } from './components/serie/serie.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HistoriaComponent } from './components/historia/historia.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SplashComponent,
     SeriesComponent,
-    SerieComponent
+    SerieComponent,
+    HistoriaComponent
   ],
   imports: [
     BrowserModule,

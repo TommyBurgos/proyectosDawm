@@ -1,0 +1,14 @@
+
+body{
+  background-image: url("../../../assets/images/fondo1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.divHistoria{
+  position: relative;
+  width: 50%;
+  height: 50%;
+  left: 25%;
+  top: 10%;
+}
